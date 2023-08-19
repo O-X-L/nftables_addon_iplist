@@ -57,6 +57,17 @@ cat /etc/nftables.d/addons/iplist.nft
     }
     ```
 
+    **Config options**:
+
+      * `separator`: default = `\n`
+
+        What separates multiple IPs/Networks in the IPList
+
+      * `comment`: default = `#`
+
+        Comment-lines will be ignored when parsing the IPList content
+
+
 2. The script is executed
 
     `python3 /usr/lib/nftables/iplist.py`
@@ -94,6 +105,7 @@ cat /etc/nftables.d/addons/iplist.nft
     * The new config is written to `/etc/nftables.d/addons/iplist.nft`
     * The actual config is validated: `sudo nft -cf /etc/nftables.conf`
     * NFTables is reloaded: `sudo systemctl reload nftables.service`
+
 
 3. You will have to include the addon-config in your main-config file `/etc/nftables.conf`:
 

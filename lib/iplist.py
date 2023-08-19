@@ -10,7 +10,7 @@ PROCESS_IPv6 = True
 
 # paths are set in util (shared between addons)
 CONFIG_FILE = 'iplist.json'
-CONFIG_FILE_KEY = 'dns'
+CONFIG_FILE_KEY = 'iplist'
 OUT_FILE = 'iplist.nft'
 
 

@@ -13,7 +13,17 @@ IPList examples:
 
 ----
 
-### Result
+## Other Addons
+
+* [DNS](https://github.com/superstes/nftables_addon_dns)
+* [Failover](https://github.com/superstes/nftables_addon_failover)
+
+NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/nftables.html)
+
+
+----
+
+## Result
 
 ```text
 cat /etc/nftables.d/addons/iplist.nft 

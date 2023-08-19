@@ -9,8 +9,6 @@ from util import validate_and_write, load_config, format_var
 PROCESS_IPv6 = True
 
 # paths are set in util (shared between addons)
-APPENDIX_4 = ''
-APPENDIX_6 = '_v6'
 CONFIG_FILE = 'iplist.json'
 CONFIG_FILE_KEY = 'dns'
 OUT_FILE = 'iplist.nft'
@@ -89,7 +87,6 @@ for var, iplist_config in CONFIG.items():
         lines.append(
             format_var(
                 name=var,
-                append=APPENDIX_4,
                 data=_filter_result_protocol(
                     protocol=4,
                     results=data,
@@ -102,7 +99,6 @@ for var, iplist_config in CONFIG.items():
             lines.append(
                 format_var(
                     name=var,
-                    append=APPENDIX_6,
                     data=_filter_result_protocol(
                         protocol=6,
                         results=data,

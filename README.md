@@ -18,7 +18,7 @@ IPList examples:
 * [DNS](https://github.com/superstes/nftables_addon_dns)
 * [Failover](https://github.com/superstes/nftables_addon_failover)
 
-NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/nftables.html)
+NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/firewall_nftables.html)
 
 
 ----

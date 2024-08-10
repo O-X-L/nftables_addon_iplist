@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Source: https://github.com/O-X-L/nftables_addon_iplist
+# Copyright (C) 2024 Rath Pascal
+# License: MIT
+
 from urllib import request
 from urllib.error import URLError, HTTPError
 from ipaddress import IPv4Network, IPv6Network, IPv4Address, IPv6Address, AddressValueError, NetmaskValueError

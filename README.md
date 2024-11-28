@@ -15,10 +15,10 @@ IPList examples:
 
 ## Other Addons
 
-* [DNS](https://github.com/superstes/nftables_addon_dns)
-* [Failover](https://github.com/superstes/nftables_addon_failover)
+* [DNS](https://github.com/O-X-L/nftables_addon_dns)
+* [Failover](https://github.com/O-X-L/nftables_addon_failover)
 
-NFTables documentation: [wiki.superstes.eu](https://wiki.superstes.eu/en/latest/1/network/firewall_nftables.html)
+NFTables documentation: [docs.o-x-l.com](https://docs.o-x-l.com/firewall/nftables.html)
 
 
 ----

@@ -13,9 +13,7 @@ from util import validate_and_write, load_config, format_var
 PROCESS_IPv6 = True
 
 # paths are set in util (shared between addons)
-CONFIG_FILE = 'iplist.json'
-CONFIG_FILE_KEY = 'iplist'
-OUT_FILE = 'iplist.nft'
+KEY = 'iplist'
 
 
 def _filter_result_protocol(protocol: int, results: list) -> list:
@@ -61,10 +59,10 @@ def _download_list(url: str, sep: str, cmt: str) -> list:
     return cleaned
 
 
-CONFIG = load_config(file=CONFIG_FILE, key=CONFIG_FILE_KEY)
+CONFIG = load_config(KEY)
 
 if CONFIG is None or len(CONFIG) == 0:
-    raise SystemExit(f"Config file could not be loaded: '{CONFIG_FILE}'!")
+    raise SystemExit('IPList Config-file could not be loaded!')
 
 lines = []
 for var, iplist_config in CONFIG.items():
@@ -111,4 +109,4 @@ for var, iplist_config in CONFIG.items():
                 )
             )
 
-validate_and_write(lines=lines, file=OUT_FILE, key=CONFIG_FILE_KEY)
+validate_and_write(lines=lines, key=KEY)

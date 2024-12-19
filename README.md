@@ -20,6 +20,36 @@ IPList examples:
 
 NFTables documentation: [docs.o-x-l.com](https://docs.o-x-l.com/firewall/nftables.html)
 
+----
+
+## Install
+
+* Create directories:
+
+   ```bash
+   mkdir -p /var/local/lib/nftables_addons /etc/nftables.d/addons/
+   ```
+
+* Add the script-files:
+
+   * [util.py](https://github.com/O-X-L/nftables_addon_dns/blob/latest/lib/util.py)
+   * [iplist.py](https://github.com/O-X-L/nftables_addon_iplist/blob/latest/lib/iplist.py)
+
+* Add the config file:
+
+   `/etc/nftables.d/addons/iplist.json`
+
+* Make sure the IPLists can be downloaded
+
+* Optional: Create a service user
+
+   * Add sudoers privileges
+   * Allow to read lib-dir
+   * Allow to write to addons-config-dir
+
+* Add cron or systemd-timer to execute the script on a schedule: `python3 /var/local/lib/nftables_addons/iplist.py`
+
+* Test it and verify it's working as expected
 
 ----
 
@@ -70,7 +100,7 @@ cat /etc/nftables.d/addons/iplist.nft
 
 2. The script is executed
 
-    `python3 /usr/lib/nftables/iplist.py`
+    `python3 /var/local/lib/nftables_addons/iplist.py`
 
   * It will load the configuration
   * Pull the current IPLists for all configured variables

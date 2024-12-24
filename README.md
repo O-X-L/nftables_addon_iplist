@@ -11,14 +11,9 @@ IPList examples:
 * [Tor exit nodes](https://check.torproject.org/torbulkexitlist)
 
 
-----
-
-## Other Addons
-
-* [DNS](https://github.com/O-X-L/nftables_addon_dns)
-* [Failover](https://github.com/O-X-L/nftables_addon_failover)
-
-NFTables documentation: [docs.o-x-l.com](https://docs.o-x-l.com/firewall/nftables.html)
+Links: [NFTables Documentation](https://docs.o-x-l.com/firewall/nftables.html) |
+[Addon for DNS-Resolution](https://github.com/O-X-L/nftables_addon_dns) |
+[Addon for Connection-Failover](https://github.com/O-X-L/nftables_addon_failover)
 
 ----
 
